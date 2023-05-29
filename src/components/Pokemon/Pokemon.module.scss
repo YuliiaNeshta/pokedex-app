@@ -1,0 +1,47 @@
+@import "src/styles/colors";
+@import "src/styles/breakpoints";
+
+.pokemon{
+  position: sticky;
+  top: 1rem;
+  box-shadow: $box-shadow02;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: $background;
+  @media screen and (max-width:$tablet){
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    width: 70%;
+  }
+}
+
+.content{
+  padding-block-end: 1rem;
+}
+
+.heading{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.buttonClose{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  transition: opacity 0.3s ease;
+  &:hover{
+    opacity: 0.8;
+  }
+  @media screen and (max-width:$tablet){
+    display: block;
+  }
+}

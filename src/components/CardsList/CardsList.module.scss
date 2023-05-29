@@ -1,0 +1,15 @@
+@import "src/styles/breakpoints";
+
+.list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  flex: 1 1 auto;
+  margin-bottom: 2rem;
+  @media screen and (max-width: $large-tablet){
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: $mobile){
+    grid-template-columns: 1fr;
+  }
+}

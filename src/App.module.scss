@@ -1,0 +1,36 @@
+@import "src/styles/breakpoints";
+
+.heading{
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.5em;
+  margin-block: 2rem;
+}
+
+.container{
+  max-width: 85rem;
+  margin: 0 auto;
+  padding-inline: 0.5rem;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  @media screen and (max-width:$tablet){
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.pokemonsContainer{
+ height: 100%;
+}
+
+.buttonMore{
+  width: 100%;
+  margin: 2rem auto 0 auto;
+}
+

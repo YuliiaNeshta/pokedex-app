@@ -1,0 +1,25 @@
+@import "src/styles/colors";
+
+.stats{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.characterLine{
+  display: flex;
+  gap: 1rem;
+  padding-block: 0.5rem;
+  border-bottom: 1px solid $text-color;
+  justify-content: space-between;
+}
+
+.stat{
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.value{
+  font-size: 1rem;
+}
