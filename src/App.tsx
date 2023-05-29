@@ -24,7 +24,7 @@ const App: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.heading}>Pokedex</h2>
+      <h2 className={styles.heading}>Pokedex 2.0</h2>
       <div className={styles.wrapper}>
         <div className={styles.content}>
           <CardsList onCardClick={handleCardClick} cardsList={cardsList} />
